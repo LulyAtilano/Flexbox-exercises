@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .box {
     color: white;
     font-size: 100px;
@@ -26,6 +30,10 @@
     display: flex;
 }
 
+/* FLEX DIRECTION: ROW, COLUMN, ROW-REVERSE & COLUMN-REVERSE */
+.container-flexDirection {
+    border: 5px solid black;
+}
 .containerFlexDirection {
     flex-direction: row; /* Valor por defecto*/
 }
@@ -41,6 +49,28 @@
 .containerFlexDirectionColumnReverse {
     flex-direction: column-reverse;
 }
+
+/* FLEX WRAP: NOWRAP, WRAP & WRAP-REVERSE */
+.container-flexWrap {
+    border: 5px solid red;
+}
+
+.container-flexWrap > div >.box {
+    width: 350px;
+}
+
+.containerUnwrap {
+    flex-wrap: nowrap;
+}
+
+.containerWrap {
+    flex-wrap: wrap;
+}
+
+.containerWrapReverse {
+    flex-wrap: wrap-reverse;
+}
+
 /*
     border: 10px solid goldenrod;
     height: 30vh;
