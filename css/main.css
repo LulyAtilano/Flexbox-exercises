@@ -71,7 +71,35 @@ body {
     flex-wrap: wrap-reverse;
 }
 
-/*
-    border: 10px solid goldenrod;
-    height: 30vh;
-*/
+/* FLEX ORDER */
+.container-flexOrder {
+    border: 5px solid purple;
+}
+
+.containerOrder > .box {
+    flex: 1;
+    /*order: 0; Es el valor por defecto*/
+}
+
+.containerOrder > .box3 {
+    order: 1;
+}
+
+.containerOrder > .box7 {
+    order: 5;
+}
+
+.containerOrderNeg > .box {
+    flex: 1;
+    order: 1;
+}
+
+.containerOrderNeg > .box3 {
+    order: -2;
+}
+
+.containerOrderNeg > .box7 {
+    order: -1;
+}
+
+/
