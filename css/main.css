@@ -8,7 +8,7 @@ body {
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0,0,0,0,0.1);
     padding: 10px;
-    height: 20vh;
+    max-height: 20vh;
 }
 
 .box1 { background-color: #e7299e; }
@@ -31,9 +31,6 @@ body {
 }
 
 /* FLEX DIRECTION: ROW, COLUMN, ROW-REVERSE & COLUMN-REVERSE */
-.container-flexDirection {
-    border: 5px solid black;
-}
 .containerFlexDirection {
     flex-direction: row; /* Valor por defecto*/
 }
@@ -51,10 +48,6 @@ body {
 }
 
 /* FLEX WRAP: NOWRAP, WRAP & WRAP-REVERSE */
-.container-flexWrap {
-    border: 5px solid red;
-}
-
 .container-flexWrap > div >.box {
     width: 350px;
 }
@@ -72,10 +65,6 @@ body {
 }
 
 /* FLEX ORDER */
-.container-flexOrder {
-    border: 5px solid purple;
-}
-
 .containerOrder > .box {
     flex: 1;
     /*order: 0; Es el valor por defecto*/
@@ -102,7 +91,8 @@ body {
     order: -1;
 }
 
-/* JUSTIFY CONTENT: FLEX-START */
+/* JUSTIFY CONTENT: FLEX-START, FLEX-END, CENTER, SPACE-EVENLY
+SPACE-AROUND, SPACE-BETWEEN */
 
 .containerJustifyContent-flexStart {
     justify-content: flex-start;
@@ -125,4 +115,68 @@ body {
 
 .containerJustifyContent-spaceAround {
     justify-content: space-around;
+}
+
+/* ALIGN-ITEMS: CENTER, FLEX-START, FLEX-END, 
+BASELINE, STRECTH*/
+
+.containerAlignItems > div {
+    height: 60vh;
+}
+
+.containerAlignItems-center {
+    align-items: center;
+    border: 1px dotted purple;
+}
+
+.containerAlignItems-flexStart {
+    align-items: flex-start;
+    border: 1px dotted blue;
+}
+
+.containerAlignItems-flexEnd {
+    align-items: flex-end;
+    border: 1px dotted green;
+}
+
+.containerAlignItems-baseline {
+    align-items: baseline;
+    border: 1px dotted red;
+}
+
+.containerAlignItems-baseline > .box {
+    max-height: none;
+}
+
+.containerAlignItems-baseline > .box1 {
+    font-size: 15px;
+}
+
+.containerAlignItems-baseline > .box2 {
+    font-size: 35px;
+}
+
+.containerAlignItems-baseline > .box3 {
+    font-size: 150px;
+}
+
+.containerAlignItems-baseline > .box4 {
+    font-size: 200px;
+}
+
+.containerAlignItems-baseline > .box5 {
+    font-size: 10px;
+}
+
+.containerAlignItems-baseline > .box10 {
+    font-size: 77px;
+}
+
+.containerAlignItems-stretch {
+    align-items: stretch;
+    border: 1px dotted #dbf7a8;
+}
+
+.containerAlignItems-stretch > .box {
+    max-height: none;
 }
