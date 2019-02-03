@@ -102,4 +102,27 @@ body {
     order: -1;
 }
 
-/
+/* JUSTIFY CONTENT: FLEX-START */
+
+.containerJustifyContent-flexStart {
+    justify-content: flex-start;
+}
+
+.containerJustifyContent-flexEnd {
+    justify-content: flex-end;
+}
+
+.containerJustifyContent-center {
+    justify-content: center;
+}
+
+.containerJustifyContent-spaceEvenly {
+    justify-content: space-evenly;
+}
+.containerJustifyContent-spaceBetween {
+    justify-content: space-between;
+}
+
+.containerJustifyContent-spaceAround {
+    justify-content: space-around;
+}
