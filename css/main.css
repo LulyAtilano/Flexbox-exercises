@@ -4,6 +4,7 @@
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0,0,0,0,0.1);
     padding: 10px;
+    height: 20vh;
 }
 
 .box1 { background-color: #e7299e; }
@@ -17,8 +18,30 @@
 .box9 { background-color: #2ecc71; }
 .box10 { background-color: #16a085; }
 
-.container {
-    display: flex;
-    border: 10px solid goldenrod;
-    height: 100vh;
+.title {
+    text-align: center;
 }
+
+.flex {
+    display: flex;
+}
+
+.containerFlexDirection {
+    flex-direction: row; /* Valor por defecto*/
+}
+
+.containerFlexDirectionRowReverse {
+    flex-direction: row-reverse;
+}
+
+.containerFlexDirectionColumn {
+    flex-direction: column;
+}
+
+.containerFlexDirectionColumnReverse {
+    flex-direction: column-reverse;
+}
+/*
+    border: 10px solid goldenrod;
+    height: 30vh;
+*/
