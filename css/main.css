@@ -180,3 +180,52 @@ BASELINE, STRECTH*/
 .containerAlignItems-stretch > .box {
     max-height: none;
 }
+
+/* ALIGN-CONTENT: FLEX-START, FLEX-END, SPACE-BETWEEN, 
+SPACE-AROUND */
+.containerAlignContent > div > .box {
+    width: 33.3%;
+    padding: 0;
+}
+
+.containerAlignContent-flexStart {
+    flex-wrap: wrap;
+    border: 1px solid orangered;
+    height: 100vh; 
+    align-content: flex-start;
+}
+
+.containerAlignContent-flexEnd {
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    height: 100vh;
+    align-content: flex-end;
+}
+
+.containerAlignContent-spaceBetween {
+    flex-wrap: wrap;
+    border: 1px solid aqua;
+    height: 100vh;
+    align-content: space-between;
+}
+
+.containerAlignContent-spaceAround {
+    flex-wrap: wrap;
+    border: 1px solid #e74c3c;
+    height: 100vh;
+    align-content: space-around;
+}
+
+.containerAlignContent-center {
+    flex-wrap: wrap;
+    border: 1px solid #ee99ea;
+    height: 100vh;
+    align-content: center;
+}
+
+.containerAlignContent-stretch {
+    flex-wrap: wrap;
+    border: 1px solid brown;
+    height: 100vh;
+    align-content: stretch; /* Valor por defecto*/
+}
