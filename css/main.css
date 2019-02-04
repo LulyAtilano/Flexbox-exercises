@@ -182,7 +182,7 @@ BASELINE, STRECTH*/
 }
 
 /* ALIGN-CONTENT: FLEX-START, FLEX-END, SPACE-BETWEEN, 
-SPACE-AROUND */
+SPACE-AROUND, STRETCH & CENTER */
 .containerAlignContent > div > .box {
     width: 33.3%;
     padding: 0;
@@ -229,3 +229,34 @@ SPACE-AROUND */
     height: 100vh;
     align-content: stretch; /* Valor por defecto*/
 }
+
+/* ALING-SELF: CENTER, FLEX-START, FLEX-END & BASELINE */
+
+.containerAlignSelf-example {
+    height: 100vh;
+    border: 3px double palevioletred;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.containerAlignSelf-example > div > .box {
+    width: 33.333%;
+}
+
+.containerAlignSelf-example > .box3 {
+    align-self: center;
+}
+
+.containerAlignSelf-example > .box6 {
+    align-self: flex-end;
+}
+
+.containerAlignSelf-example > .box6 {
+    padding-bottom: 0;
+}
+
+.containerAlignSelf-example > .box10 {
+    align-self: stretch;
+    padding-bottom: 50px;
+}
+
